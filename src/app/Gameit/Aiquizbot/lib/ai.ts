@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// const genAI = new GoogleGenerativeAI("AIzaSyA4ZQG1CcTcTDahJHKuEjtgHFMpyFpb5kg");
+const genAI = new GoogleGenerativeAI("AIzaSyA4ZQG1CcTcTDahJHKuEjtgHFMpyFpb5kg");
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 export const createPrompt = async (title: string) => {
