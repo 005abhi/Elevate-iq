@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Sidebar } from "../../components/Sidebar";
 import "../globals.css";
 
-export const page = () => {
+const page = () => {
   return (
     <main className="layout ">
       <div className="sidebar">
