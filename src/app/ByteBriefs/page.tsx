@@ -6,18 +6,18 @@ import { Sidebar } from "../components/Sidebar";
 import "./globals.css";
 
 interface Article {
-  urlToImage: string;
-  title: string;
-  url: string;
-  description: string;
-  author: string;
-  publishedAt: string;
+  urlToImage?: string;
+  title?: string;
+  url?: string;
+  description?: string;
+  author?: string;
+  publishedAt?: string;
 }
 
 const NewsPage: React.FC = () => {
   const [latestNews, setLatestNews] = useState<Article[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const apiKey = "df783de3e07940ec9397fc7814b48ddc";
+  const apiKey = process.env.NEXT_PUBLIC_NEWS_API_KEY;
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -40,8 +40,8 @@ const NewsPage: React.FC = () => {
     fetchNews();
   }, [apiKey]);
 
-  const formatDate = (dateString: string) =>
-    new Date(dateString).toLocaleDateString();
+  const formatDate = (dateString: string | undefined): string =>
+    dateString ? new Date(dateString).toLocaleDateString() : "Unknown";
 
   return (
     <main className="layout">
@@ -68,17 +68,21 @@ const NewsPage: React.FC = () => {
                 <img
                   className="w-full h-48 object-cover"
                   src={news.urlToImage}
-                  alt={news.title}
+                  alt={news.title || "News Image"}
                 />
                 <div className="p-4">
-                  <h2 className="text-lg font-bold">{news.title}</h2>
+                  <h2 className="text-lg font-bold">
+                    {news.title || "No Title"}
+                  </h2>
                   <p className="text-sm text-gray-400">
                     By: {news.author || "Unknown"}
                   </p>
                   <p className="text-sm text-gray-400">
                     Published: {formatDate(news.publishedAt)}
                   </p>
-                  <p className="mt-2">{news.description}</p>
+                  <p className="mt-2">
+                    {news.description || "No description available."}
+                  </p>
                   <a
                     href={news.url}
                     target="_blank"
@@ -126,4 +130,5 @@ const NewsPage: React.FC = () => {
     </main>
   );
 };
+
 export default NewsPage;
