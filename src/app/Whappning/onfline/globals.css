@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; /* Stack Sidebar and Home vertically */
+  }
+
+  .sidebar {
+    flex: 0 0 auto; /* Adjust Sidebar width for mobile */
+    width: 100%; /* Full width for Sidebar */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.layout {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  flex: 0 0 250px; /* Fixed width for Sidebar */
+  background-color: #000; /* Black background for Sidebar */
+  border-right: 2px solid rgb(106, 105, 105); /* White line on the right side */
+  height: 100vh; /* Ensure it spans the full height */
+  box-sizing: border-box; /* Ensure the border doesn't affect the width */
+}
+
+.byte {
+  flex: 1;
+
+  overflow-y: auto;
+  background-color: #000; /* Match background to blend */
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #000000;
+}

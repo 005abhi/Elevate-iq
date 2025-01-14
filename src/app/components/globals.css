@@ -1,0 +1,6 @@
+/* Add this to your global CSS file */
+.icon-gradient {
+  background: linear-gradient(to right, #8e2de2, #ff65a3); /* Purple to Pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
