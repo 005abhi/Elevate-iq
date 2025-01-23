@@ -8,12 +8,12 @@ Enhancing employability among Indian youth through skill-building, interactive l
 
 ElevateIQ is an all-encompassing platform designed to bridge the gap between educational institutions and industry demands. The project is structured into six key components:
 <ul>
-<li>Skillhive: A repository of resources, events, and technical news.</li>
-<li>Gammit: Interactive learning through quizzes and gamified coding challenges.</li>
-<li>ByteBriefs: Technical news and bite-sized updates.</li>
-<li>CareerCompass: AI-powered job recommendations and resume analysis.</li>
-<li>Jobbit: A centralized job portal for students to explore internships and job opportunities.</li>
-<li>Whappning: A dashboard for real-time updates on ongoing technical trends and events.</li>
+<li>Skillhive:Access skill enhancement resources and showcase innovative projects to gain feedback and visibility among industry professionals.</li>
+<li>Gammit: : Experience interactive learning through engaging quizzes and AI-powered virtual interviews with VirtuHire, designed to prepare students for real-world scenarios.</li>
+<li>ByteBriefs:Stay updated with real-time tech news, trends, and developments to remain industry-ready.</li>
+<li>CareerCompass:: Receive in-depth career guidance with personalized roadmaps and insights from the AI-powered Career Guide BotX, tailored to align with individual goals.</li>
+<li>Jobbit:Explore engaging, topic-based educational videos with advanced navigation.</li>
+<li>Whappning:Track and participate in events like hackathons to build skills and network effectively.</li>
 </ul>
 
 <h3>💡 Problem Statement</h3>
