@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h2>ElevateIQ 🚀</h2>
 
-## Getting Started
+Enhancing employability among Indian youth through skill-building, interactive learning, and industry-aligned resources.
 
-First, run the development server:
+![image](https://github.com/user-attachments/assets/d2cc980b-3690-49d4-8431-3e72b02e4ec7)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h3>🔗 Overview</h3>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ElevateIQ is an all-encompassing platform designed to bridge the gap between educational institutions and industry demands. The project is structured into six key components:
+<ul>
+<li>Skillhive: A repository of resources, events, and technical news.</li>
+<li>Gammit: Interactive learning through quizzes and gamified coding challenges.</li>
+<li>ByteBriefs: Technical news and bite-sized updates.</li>
+<li>CareerCompass: AI-powered job recommendations and resume analysis.</li>
+<li>Jobbit: A centralized job portal for students to explore internships and job opportunities.</li>
+<li>Whappning: A dashboard for real-time updates on ongoing technical trends and events.</li>
+</ul>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h3>💡 Problem Statement</h3>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+India faces a significant skills gap between academia and industry. ElevateIQ aims to empower youth with the necessary tools and resources to bridge this gap and increase employability.
 
-## Learn More
+<h3>🔧 Tech Stack</h3>
 
-To learn more about Next.js, take a look at the following resources:
+Frontend: Next.js with TypeScript.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Backend: MondgoDB for authentication and real-time database.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+API: Gemini AI API , NewsAPI , Elevenlabs API
